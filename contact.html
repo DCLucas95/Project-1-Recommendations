@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   
     <style>
         #search {
             text-align: center;
@@ -22,6 +23,35 @@
         .row.content {
             height: 450px
         }
+
+        h1{
+            font-weight: bolder;
+        }
+
+        input[type=text], select, textarea {
+        width: 100%; 
+        padding: 12px;
+        border: 1px solid rgb(163, 159, 159);
+        border-radius: 4px; 
+        box-sizing: border-box; 
+        margin-top: 6px;
+        margin-bottom: 16px; 
+        resize: vertical 
+        }
+        
+        input[type=submit] {
+        background-color: #134f61;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }  
+
+        input[type=submit]:hover {
+        background-color: #3a1a3d;
+        }     
+       
     </style>
 </head>
 
@@ -53,29 +83,27 @@
             <div class="col-sm-6" id="search">
                 <form>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Type your Artist/ Book/ Movie/ Tv Serie</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <button type="submit" class="btn btn-primary">Search</button>
-                </form>
+                        <h1 for="page title">Our team is here to help</h1><br>
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                        
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
             </div>
             <div class="col-sm-3"></div>
         </div>
         <div class="row content" id="recommendations">
             <div class="col-sm-12">
-                <h1>TEST 2:</h1><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea commodo
-                    consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                    anim id
-                    est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
+               
                 <hr>
-                <h3>Information about it:</h3>
-                <p>Lorem ipsum...</p>
+
             </div>
         </div>
     </div>
