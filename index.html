@@ -5,28 +5,14 @@
   <title>Best Recommendations</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></link>
-  <link src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></link>
-  <style>
-    #search {
-      text-align: center;
-    }
 
-    footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-    }
-
-    .row.content {
-      height: 450px
-    }
-  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -47,36 +33,92 @@
     </div>
   </nav>
 
-  <div class="container-fluid text-center">
+  <div class="background container-fluid text-center">
     <div class="row">
       <div class="col-sm-3"></div>
       <div class="col-sm-6" id="search">
         <form>
           <div class="form-group">
-            <label for="exampleInputEmail1">Type your Artist/ Book/ Movie/ Tv Serie</label>
-            <input class="form-control" id="userOption" aria-describedby="emailHelp">
-            <button id="searchB" type="submit" class="btn btn-primary">Search</button>
+            <label for="UserSearch">Type your Favourite Artist/ Book/ Movie/ TV Series or Podcast to see your
+              Recommendations</label>
+            <input type="text" class="form-control" id="UserSearch">
+            <button type="submit" class="btn btn-primary">Search</button>
         </form>
       </div>
       <div class="col-sm-3"></div>
     </div>
-    <div class="row content" id="recommendations">
-      <div class="col-sm-12">
-        <h1>Best Matches:</h1><br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <hr>
-        <h3>Information about it:</h3>
-        <p>Lorem ipsum...</p>
+  </div>
+
+
+  <div class="jumbotron">
+    <h1 class="display-4">Best Matches</h1>
+    <div class="row">
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 id="5Day1">Suggestion 1</h5>
+            <p id="image"><img id="Suggestion1" src="" alt="Suggestion1"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 id="5Day2">Suggestion 2</h5>
+            <p id="image"><img id="Suggestion2" src="" alt="Suggestion2"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 id="5Day2">Suggestion 3</h5>
+            <p id="image"><img id="Suggestion3" src="" alt="Suggestion3"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 id="5Day2">Suggestion 4</h5>
+            <p id="image"><img id="Suggestion4" src="" alt="Suggestion4"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 id="5Day2">Suggestion 5</h5>
+            <p id="image"><img id="Suggestion5" src="" alt="Suggestion5"></p>
+          </div>
+        </div>
+      </div>
+      <div class="row content" id="recommendations">
+        <div class="col-sm-12">
+          <p>
+          </p>
+
+          <br>
+
+          <h2>More about it:</h2>
+          <p>Lorem ipsum...</p>
+        </div>
       </div>
     </div>
   </div>
+  </div>
+
+
+
+
 
   <footer class="container-fluid text-center">
-    <p>Thanks for using our application</p>
+    <p>Thanks for using our application!</p>
+    <p> &copy; Copyright Team2020</p>
   </footer>
  
   <script src="https://code.jquery.com/jquery.js"></script>
