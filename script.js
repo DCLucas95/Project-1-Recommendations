@@ -17,20 +17,19 @@ $(document).ready(function () {
 
     $.getJSON(divQueryURL).then(function (response) {
       console.log(response);
-      wikiAPI(response.Similar.Results[0].Name);
+      for (var i = 0; i < response.Similar.Results.length; i++) {
+        wikiAPI =
+          "https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exsentences=10&origin=*&exlimit=1&titles=" +
+          response.Similar.Results[i].Name +
+          "&explaintext=1&format=json";
+
+        $.ajax({
+          url: wikiAPI,
+          method: "GET",
+        }).then(function (response) {
+          console.log(response);
+        });
+      }
     });
   });
 });
-function wikiAPI(name) {
-  wikiAPI =
-    "https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exsentences=10&origin=*&exlimit=1&titles=" +
-    name +
-    "&explaintext=1&format=json";
-
-  $.ajax({
-    url: wikiAPI,
-    method: "GET",
-  }).then(function (response) {
-    console.log(response);
-  });
-}
