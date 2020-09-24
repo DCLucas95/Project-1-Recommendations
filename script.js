@@ -6,16 +6,15 @@ $("#searchB").on("click", function(event){
 var userOption= $ ("#userOption").val();
 var APIKey ="385709-project1-WLBPHP8D"
 
-var divQueryURL ="https://tastedive.com/api/similar?info=1&origin=*&q="+ userOption +"&k="+APIKey;
+var divQueryURL ="https://tastedive.com/api/similar?info=1&origin=*&q="+ userOption +"&k="+APIKey+"&callback=?";
 
 console.log(userOption);
 console.log(divQueryURL);
 
-$.ajax({
-   url: divQueryURL,
-   method:"GET"
-}).then(function(response){
-    // console.log(response);
+$.getJSON(
+    divQueryURL
+).then(function(response){
+    console.log(response);
 });
 
 });
