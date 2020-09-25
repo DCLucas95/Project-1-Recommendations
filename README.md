@@ -10,8 +10,15 @@ SO THAT I can make a decision about whether or not to try it
 ## Wireframe or Sketch of the design
 ![image](https://user-images.githubusercontent.com/69066157/93866655-4908c300-fd0b-11ea-84b8-637bfaea30df.png)
 ## APIs to be used
-Tastedive - Reccomendation API
+Tastedive - Recommendation API
 MediaWiki - Wikipedia API
+
+##Tools Used
+Github for commitments and website hosting 
+VS Studio for creating the javascript 
+Bootstrap for the layout and styling 
+Jquery for easy to code javascript 
+Open weather API for search results 
 
 ## Rough breakdown of tasks -
 
