@@ -41,19 +41,6 @@ textarea {
     resize: vertical
 }
 
-input[type=submit] {
-    background-color: #134f61;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #3a1a3d;
-}
-
 footer {
     background-color:#343a40;
     color:antiquewhite;
@@ -65,8 +52,27 @@ footer {
 
 img {
     border-radius: 8px;
+    max-width: 15%;
   }
 
 .card {
     margin: 1%;
 }
+
+a.btn {
+    color: #fff;
+    background:#343a40;
+    padding: .5rem 1rem;
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    height: 10%;
+    width: 15%;
+  }
+
+  .modal {
+      text-align: center;
+      height: 10%;
+      width: 20%;
+      font-weight: bold;
+  }

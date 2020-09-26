@@ -5,10 +5,14 @@
     <title>Best Recommendations</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./Develop/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 
 <body>
@@ -41,7 +45,7 @@
                 <div class="col-sm-6" id="search">
                     <form>
                         <div class="form-group">
-                            <h1 class="display-4">Have Questions or Feedback? Let Us Know!</h1>
+                            <h1 class="display-4">Have Questions or Feedback?</h1>
                             <label for="fname">First Name</label>
                             <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
@@ -53,7 +57,15 @@
                             <textarea id="subject" name="subject" placeholder="Write something.."
                                 style="height:200px"></textarea>
 
-                            <input type="submit" value="Submit">
+
+                            <div id="ex1" class="modal">
+                                <p id="sumbission-name">Thanks for the submission</p>
+                                <a href="#" rel="modal:close" class="btn-min">Close</a>
+                            </div>
+
+                            <div>
+                                <a class="btn" href="#ex1" rel="modal:open" class="btn">Submit</a>
+                            </div>
                     </form>
                 </div>
             </div>
