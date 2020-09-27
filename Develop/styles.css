@@ -50,9 +50,13 @@ footer {
     width: 100%;
 }
 
-img {
+.diagram {
     border-radius: 8px;
-    max-width: 15%;
+    max-width: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
 
 .card {
@@ -75,4 +79,9 @@ a.btn {
       height: 10%;
       width: 20%;
       font-weight: bold;
+  }
+
+  h2 {
+      font-weight: bold;
+      color: cadetblue;
   }
