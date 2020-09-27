@@ -51,10 +51,15 @@ footer {
   width: 100%;
 }
 
-img {
-  border-radius: 8px;
-  max-width: 15%;
-}
+.diagram {
+    border-radius: 8px;
+    max-width: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
 
 .card {
   margin: 1%;
@@ -71,9 +76,11 @@ a.btn {
   width: 15%;
 }
 
-.modal {
-  text-align: center;
-  height: 10%;
-  width: 20%;
-  font-weight: bold;
-}
+  .modal {
+      text-align: center;
+      height: 10%;
+      width: 20%;
+      font-weight: bold;
+  }
+
+

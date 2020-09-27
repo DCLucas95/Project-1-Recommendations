@@ -23,10 +23,10 @@ Open weather API for search results
 ## Rough breakdown of tasks -
 
 Create project check list 
-Choosing sourses for calling info 
+Choosing sources for calling info 
 Choosing title for our app
 Making a plan for the rough look of the APP
 Building the HTML & CSS 
 Bulding the API key
-Working the on functionality
-Checking the app 
+Working on functionality
+Making sure the app works
