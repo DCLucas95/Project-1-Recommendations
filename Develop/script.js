@@ -8,7 +8,8 @@ $(document).ready(function () {
     tasteDiveAPI(userOption);
   });
   //call wiki api upon clicking on the suggestion card
-  $(document).on("click", ".suggcards", function () {
+  $(".card-body").on("click", ".suggcards", function () {
+    emptyWikitext();
     wikiAPI($(this).text());
   });
 
@@ -23,9 +24,8 @@ $(document).ready(function () {
 
     $.getJSON(divQueryURL).then(function (response) {
       //API tasteDive
-      console.log(response);
-
       for (var i = 0; i < response.Similar.Results.length; i++) {
+        $("#bestmatches").text("Best Matches for " + userOption);
         //looping at the recommendations and add on the cards
         var typeID = "#Sug" + i;
         var SuggText = "#Suggestion" + i;
@@ -53,7 +53,6 @@ $(document).ready(function () {
         },
       },
     }).then(function (response) {
-      console.log(response.query.pages);
       var pageNumber = Object.keys(response.query.pages);
       $("#wikiText").text(response.query.pages[pageNumber].extract);
     });
@@ -67,3 +66,7 @@ $(document).ready(function () {
     }
   }
 });
+
+function emptyWikitext() {
+  $("#wikiText").empty();
+}
