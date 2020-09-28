@@ -8,9 +8,12 @@ $(document).ready(function () {
     tasteDiveAPI(userOption);
   });
   //call wiki api upon clicking on the suggestion card
-  $("button").on("click", ".suggcards", function () {
+  $("button").on("click", ".suggcard ", function (event) {
+    event.preventDefault();
+    debugger;
     emptyWikitext();
-    wikiAPI($(this).text());
+    var recommenText = $(this).attr("data-id");
+    wikiAPI(recommenText);
   });
 
   //Taste dive api
@@ -24,12 +27,16 @@ $(document).ready(function () {
 
     $.getJSON(divQueryURL).then(function (response) {
       //API tasteDive
+      console.log(response);
       for (var i = 0; i < response.Similar.Results.length; i++) {
+        debugger;
         //looping at the recommendations and add on the cards
         var typeID = "#Sug" + i;
         var SuggText = "#Suggestion" + i;
+        var buttonCard = "#cardbutton" + i;
         $(typeID).text(response.Similar.Results[i].Type);
         $(SuggText).text(response.Similar.Results[i].Name);
+        $(SuggText).attr("data-id", response.Similar.Results[i].Name);
       }
       $("#bestmatches").text('Best Matches for "' + userOption + '"');
     });
@@ -37,13 +44,15 @@ $(document).ready(function () {
 
   //passing recommandations to the wiki api;
   function wikiAPI(suggestion) {
-    wikiAPI =
+    wikiAPIURL =
       "https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exsentences=10&origin=*&exlimit=1&titles=" +
       suggestion +
       "&explaintext=1&format=json";
+
     localStorage.setItem("lastSuggestion", JSON.stringify(suggestion));
+
     $.ajax({
-      url: wikiAPI,
+      url: wikiAPIURL,
       method: "GET",
       statusCode: {
         404: function () {
