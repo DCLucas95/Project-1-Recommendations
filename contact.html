@@ -13,6 +13,8 @@
     <!-- jQuery Modal -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+
 </head>
 
 <body>
@@ -43,7 +45,8 @@
             <div class="row">
                 <div class="col-sm-3"></div>
                 <div class="col-sm-6" id="search">
-                    <form>
+
+                    <form id="main">
                         <div class="form-group">
                             <h1 class="display-4">Have Questions or Feedback?</h1>
                             <label for="fname">First Name</label>
@@ -61,12 +64,14 @@
                             <div id="ex1" class="modal">
                                 <p id="sumbission-name">Thanks for the submission</p>
                                 <a href="#" rel="modal:close" class="btn-min">Close</a>
-                            </div>
+                            </div> 
 
                             <div>
-                                <a class="btn" href="#ex1" rel="modal:open" class="btn">Submit</a>
+                                <a id="myBtn"class="btn" href="#ex1" rel="modal:open" class="btn">Submit</a>
                             </div>
+
                     </form>
+               
                 </div>
             </div>
         </div>
@@ -78,7 +83,6 @@
         <p>Thanks for using our application!</p>
         <p> &copy; Copyright Team2020</p>
     </footer>
-
 </body>
 
 </html>
