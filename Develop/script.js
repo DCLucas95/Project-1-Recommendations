@@ -8,7 +8,7 @@ $(document).ready(function () {
     tasteDiveAPI(userOption);
   });
   //call wiki api upon clicking on the suggestion card
-  $("button").on("click", ".suggcard ", function (event) {
+  $("button.card").on("click", function (event) {
     event.preventDefault();
     debugger;
     emptyWikitext();
@@ -36,7 +36,7 @@ $(document).ready(function () {
         var buttonCard = "#cardbutton" + i;
         $(typeID).text(response.Similar.Results[i].Type);
         $(SuggText).text(response.Similar.Results[i].Name);
-        $(SuggText).attr("data-id", response.Similar.Results[i].Name);
+        $(buttonCard).attr("data-id", response.Similar.Results[i].Name);
       }
       $("#bestmatches").text('Best Matches for "' + userOption + '"');
     });
