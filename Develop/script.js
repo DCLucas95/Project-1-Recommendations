@@ -10,7 +10,6 @@ $(document).ready(function () {
   //call wiki api upon clicking on the suggestion card
   $("button.card").on("click", function (event) {
     event.preventDefault();
-    debugger;
     emptyWikitext();
     var recommenText = $(this).attr("data-id");
     wikiAPI(recommenText);
@@ -29,7 +28,6 @@ $(document).ready(function () {
       //API tasteDive
       console.log(response);
       for (var i = 0; i < response.Similar.Results.length; i++) {
-        debugger;
         //looping at the recommendations and add on the cards
         var typeID = "#Sug" + i;
         var SuggText = "#Suggestion" + i;
