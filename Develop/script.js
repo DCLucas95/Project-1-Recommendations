@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  var youtArray = [];
   returnStoredSearch(); // getting the last seach item
 
   // initiating upon clicking on the search
@@ -11,7 +12,23 @@ $(document).ready(function () {
   $("button.card").on("click", function (event) {
     event.preventDefault();
     emptyWikitext();
+    debugger;
     var recommenText = $(this).attr("data-id");
+    var getIdNumber = $(this).attr("id").slice(-1);
+    if (getIdNumber == 1) {
+      $("#ytplayer").attr("src", youtArray[1]);
+    } else if (getIdNumber == 2) {
+      $("#ytplayer").attr("src", youtArray[2]);
+    } else if (getIdNumber == 3) {
+      $("#ytplayer").attr("src", youtArray[3]);
+    } else if (getIdNumber == 4) {
+      $("#ytplayer").attr("src", youtArray[4]);
+    } else if (getIdNumber == 5) {
+      $("#ytplayer").attr("src", youtArray[5]);
+    } else {
+      getIdNumber == 6;
+      $("#ytplayer").attr("src", youtArray[6]);
+    }
     wikiAPI(recommenText);
   });
 
@@ -26,6 +43,7 @@ $(document).ready(function () {
 
     $.getJSON(divQueryURL).then(function (response) {
       //API tasteDive
+      youtArray = [];
       console.log(response);
       for (var i = 0; i < response.Similar.Results.length; i++) {
         //looping at the recommendations and add on the cards
@@ -35,6 +53,7 @@ $(document).ready(function () {
         $(typeID).text(response.Similar.Results[i].Type);
         $(SuggText).text(response.Similar.Results[i].Name);
         $(buttonCard).attr("data-id", response.Similar.Results[i].Name);
+        youtArray.push(response.Similar.Results[i].yUrl);
       }
       $("#bestmatches").text('Best Matches for "' + userOption + '"');
     });
@@ -82,6 +101,7 @@ $(document).ready(function () {
 function emptyWikitext() {
   $("#wikiText").empty();
   $("#wikiHeaderText").empty();
+  $("#ytplayer").attr("src", "");
 }
 
 //button to clear local storage
