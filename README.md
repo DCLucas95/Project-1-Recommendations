@@ -49,20 +49,20 @@ Making sure the app works
 
 ## Authors
 
-David Lucas <br><br>
+David Lucas <br><
 Contact information:<br>
 davidclucas95@gmail.com<br>
-Github: DCLucas95<br>
+Github: DCLucas95<br><br>
 
-Elahe JamshidiAraghi <br><br>
+Elahe JamshidiAraghi <br>
 Contact information:<br>
 elijam1608@gmail.com<br>
-Github: Eli-33<br>
+Github: Eli-33<br><br>
 
-Felipe Ferreira <br><br>
+Felipe Ferreira <br>
 Contact information:<br>
 felipesqf@gmail.com<br>
-Github: felipesqf<br>
+Github: felipesqf<br><br>
 
 ​​
 
