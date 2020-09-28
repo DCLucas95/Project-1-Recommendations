@@ -49,7 +49,7 @@ Making sure the app works
 
 ## Authors
 
-David Lucas <br><
+David Lucas <br>
 Contact information:<br>
 davidclucas95@gmail.com<br>
 Github: DCLucas95<br><br>
