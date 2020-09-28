@@ -31,7 +31,7 @@ $(document).ready(function () {
         $(typeID).text(response.Similar.Results[i].Type);
         $(SuggText).text(response.Similar.Results[i].Name);
       }
-      $("#bestmatches").append(' "' + userOption + '"');
+      $("#bestmatches").text('Best Matches for "' + userOption + '"');
     });
   }
 
@@ -54,7 +54,7 @@ $(document).ready(function () {
       },
     }).then(function (response) {
       var pageNumber = Object.keys(response.query.pages);
-      $("#wikiHeaderText").append('More about "' + suggestion + '"');
+      $("#wikiHeaderText").text('More about "' + suggestion + '"');
       $("#wikiText").text(response.query.pages[pageNumber].extract);
     });
   }
