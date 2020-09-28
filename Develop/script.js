@@ -54,7 +54,7 @@ $(document).ready(function () {
       },
     }).then(function (response) {
       var pageNumber = Object.keys(response.query.pages);
-      $("#wikiHeaderText").append('"' + suggestion + '"');
+      $("#wikiHeaderText").append('More about "' + suggestion + '"');
       $("#wikiText").text(response.query.pages[pageNumber].extract);
     });
   }
