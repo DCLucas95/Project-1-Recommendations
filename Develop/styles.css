@@ -9,7 +9,17 @@
   background-color: #343a40;
   color: antiquewhite;
 }
-
+.navbar-brand {
+  font-family: "Bangers", cursive;
+  font-size: 1.85rem;
+}
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .row.content {
   height: 450px;
 }
