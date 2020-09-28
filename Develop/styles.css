@@ -21,7 +21,7 @@
   transform: translate(-50%, -50%);
 }
 .row.content {
-  height: 450px;
+  min-height: 450px;
 }
 .navbar-brand {
   float: right;
@@ -67,18 +67,18 @@ footer {
   background-color: #343a40;
   color: antiquewhite;
   padding: 5px;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
 
 .diagram {
   border-radius: 8px;
-  max-width: 10%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  max-width: 400px
 }
 
 .card {
@@ -98,7 +98,10 @@ a.btn {
 
 .modal {
   text-align: center;
-  height: 10%;
-  width: 20%;
   font-weight: bold;
+  max-height: 100px;
+}
+
+.btn {
+  margin-right: 5px;
 }
