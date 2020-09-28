@@ -21,7 +21,7 @@
   transform: translate(-50%, -50%);
 }
 .row.content {
-  height: 450px;
+  min-height: 450px;
 }
 .navbar-brand {
   float: right;
