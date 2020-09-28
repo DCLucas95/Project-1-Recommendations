@@ -98,9 +98,8 @@ a.btn {
 
 .modal {
   text-align: center;
-  height: 10%;
-  width: 20%;
   font-weight: bold;
+  max-height: 100px;
 }
 
 .btn {
