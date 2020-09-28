@@ -8,7 +8,7 @@ $(document).ready(function () {
     tasteDiveAPI(userOption);
   });
   //call wiki api upon clicking on the suggestion card
-  $(".card-body").on("click", ".suggcards", function () {
+  $("button").on("click", ".suggcards", function () {
     emptyWikitext();
     wikiAPI($(this).text());
   });
@@ -25,23 +25,23 @@ $(document).ready(function () {
     $.getJSON(divQueryURL).then(function (response) {
       //API tasteDive
       for (var i = 0; i < response.Similar.Results.length; i++) {
-        $("#bestmatches").text("Best Matches for " + userOption);
         //looping at the recommendations and add on the cards
         var typeID = "#Sug" + i;
         var SuggText = "#Suggestion" + i;
         $(typeID).text(response.Similar.Results[i].Type);
         $(SuggText).text(response.Similar.Results[i].Name);
       }
+      $("#bestmatches").append(' "' + userOption + '"');
     });
   }
-  //passing each recommandations to the wiki api;
 
+  //passing recommandations to the wiki api;
   function wikiAPI(suggestion) {
     wikiAPI =
       "https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exsentences=10&origin=*&exlimit=1&titles=" +
       suggestion +
       "&explaintext=1&format=json";
-
+    localStorage.setItem("lastSuggestion", JSON.stringify(suggestion));
     $.ajax({
       url: wikiAPI,
       method: "GET",
@@ -54,6 +54,7 @@ $(document).ready(function () {
       },
     }).then(function (response) {
       var pageNumber = Object.keys(response.query.pages);
+      $("#wikiHeaderText").append('"' + suggestion + '"');
       $("#wikiText").text(response.query.pages[pageNumber].extract);
     });
   }
@@ -64,9 +65,14 @@ $(document).ready(function () {
     if (storedSearch !== null) {
       tasteDiveAPI(storedSearch);
     }
+    var storedSuggestion = JSON.parse(localStorage.getItem("lastSuggestion"));
+    if (storedSuggestion !== null) {
+      wikiAPI(storedSuggestion);
+    }
   }
 });
 
 function emptyWikitext() {
   $("#wikiText").empty();
+  $("#wikiHeaderText").empty();
 }
