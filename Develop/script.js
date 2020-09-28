@@ -34,8 +34,8 @@ $(document).ready(function () {
       $("#bestmatches").append(' "' + userOption + '"');
     });
   }
-  //passing each recommandations to the wiki api;
 
+  //passing recommandations to the wiki api;
   function wikiAPI(suggestion) {
     wikiAPI =
       "https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exsentences=10&origin=*&exlimit=1&titles=" +
