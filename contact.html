@@ -7,19 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./Develop/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    <!-- jQuery Modal -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 
 <body>
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="navbar-nav">
-            <a class="navbar-brand">Best Recommendations     |</a>
+            <a class="navbar-brand">Best Recommendations |</a>
             <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
             <a class="nav-link" href="./About.html">About</a>
             <a class="nav-link" href="./Team.html">Team</a>
@@ -47,15 +41,26 @@
                             <textarea id="subject" name="subject" placeholder="Write something.."
                                 style="height:200px"></textarea>
 
+                            <button class="btn btn-dark" onclick="showModal()">Submit</button>
 
-                            <div id="ex1" class="modal">
-                                <p id="sumbission-name">Thanks for the submission. We appreciate your input and will use
-                                    it to make or project even better></p>
-                                <a href="#" rel="modal:close" class="btn-min">Close</a>
-                            </div>
-
-                            <div>
-                                <a class="btn" href="#ex1" rel="modal:open" class="btn">Submit</a>
+                            <div class="modal" id="confirm-modal" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Feedback Received!</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Thanks for the feedback! We will use it to make our app even better!!</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                     </form>
                 </div>
@@ -70,6 +75,10 @@
         <p> &copy; Copyright Team2020</p>
     </footer>
 
+    <!--Script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./Develop/script.js"></script>
 </body>
 
 </html>

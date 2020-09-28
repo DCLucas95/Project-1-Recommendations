@@ -14,16 +14,16 @@
 <body>
   <!--Navbar-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    
+
     <div class="navbar-nav">
-      <a class="navbar-brand">Best Recommendations     |</a>
+      <a class="navbar-brand">Best Recommendations |</a>
       <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
       <a class="nav-link" href="./About.html">About</a>
       <a class="nav-link" href="./Team.html">Team</a>
       <a class="nav-link" href="./contact.html">Contact</a>
-      
+
     </div>
-    
+
   </nav>
 
 
@@ -38,10 +38,13 @@
             <div class="form-group">
               <h5 for="UserSearch">Type your Favourite Artist/ Book/ Movie/ TV Series or Podcast to see your
                 Recommendations</h5>
-                <div class="row" id="searchControl">
-              <input type="input" class="form-control mb-2" id="UserSearch">
-              <button type="submit" class="btn btn-dark mb-2" id="searchB">Search</button>
-            </div>
+              <div class="row" id="searchControl">
+                <input type="input" class="form-control mb-2" id="UserSearch">
+                <button type="submit" class="btn btn-dark mb-2" id="searchB">Search</button>
+
+                <!--Button to clear local storage-->
+                <button type="button" class="btn btn-danger mb-2">Clear searches</button>
+              </div>
             </div>
           </form>
         </div>
@@ -125,9 +128,6 @@
     </div>
   </div>
   </div>
-
-
-
 
   <!--Footer-->
   <footer class="container-fluid text-center">

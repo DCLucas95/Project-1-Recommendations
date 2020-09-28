@@ -76,3 +76,15 @@ function emptyWikitext() {
   $("#wikiText").empty();
   $("#wikiHeaderText").empty();
 }
+
+//button to clear local storage
+$('.btn-danger').on('click', clearLocalStorage);
+function clearLocalStorage() {
+  location.reload()
+  window.localStorage.clear();
+}
+
+//Function to show a modal acknowleding feedback on the contact page
+function showModal() {
+  $('#confirm-modal').modal();
+}
