@@ -77,9 +77,9 @@ footer {
   background-color: #343a40;
   color: antiquewhite;
   padding: 5px;
-  position: relative;
-  bottom: 0;
   width: 100%;
+  position: static;
+  bottom: 0px;
 }
 
 .diagram {
