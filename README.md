@@ -18,7 +18,7 @@ SO THAT I can make a decision about whether or not to try it
 
 #### Final Interface
 
-​![screenshot1](https://github.com/DCLucas95/Project-1-Recommendations/blob/master/Assets/pic01.PNG)
+![image](https://user-images.githubusercontent.com/69066157/94549951-53d8d000-0296-11eb-8baf-4bed2f58fb0a.png)
 
 ## APIs to be used
 
