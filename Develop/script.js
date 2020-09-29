@@ -50,7 +50,7 @@ $(document).ready(function () {
     $.getJSON(divQueryURL).then(function (response) {
       //API tasteDive
       youtArray = [];
-      console.log(response);
+
       for (var i = 0; i < response.Similar.Results.length; i++) {
         //looping at the recommendations and add on the cards
         var typeID = "#Sug" + i;
@@ -111,14 +111,15 @@ function emptyWikitext() {
 }
 
 //button to clear local storage
-$('.btn-danger').on('click', clearLocalStorage);
+$(".btn-danger").on("click", clearLocalStorage);
 function clearLocalStorage() {
-  location.reload()
+  location.reload();
   window.localStorage.clear();
 }
 
 //Function to show a modal acknowleding feedback on the contact page
 function showModal() {
+  
   $('#confirm-modal').modal();
 }
 
@@ -129,4 +130,3 @@ $('#theForm input[type="text"]').blur(function(){
       $(this).removeClass("error");
   }
 });
-
