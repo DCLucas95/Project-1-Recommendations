@@ -1,6 +1,4 @@
-# Project Title
-
-Best Recommendations
+# Group Project - Best Recommendations
 
 ## Project Description
 
