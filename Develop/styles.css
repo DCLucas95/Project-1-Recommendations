@@ -39,9 +39,16 @@
   padding: 30px 40px;
   display: inline-block;
   text-align: center;
+}
+
+#cardbutton1,
+#cardbutton2,
+#cardbutton3,
+#cardbutton4,
+#cardbutton5,
+#cardbutton6 {
   width: 18rem;
   height: 18rem;
-  overflow: hidden;
 }
 
 h1 {
@@ -108,10 +115,15 @@ a.btn {
 .btn {
   margin-right: 5px;
 }
-@media screen and (max-width: 768px) {
-  .card {
-    width: 8rem;
-    height: 8rem;
-    font-size: 10px;
+
+@media only screen and (max-width: 600px) {
+  #cardbutton1,
+  #cardbutton2,
+  #cardbutton3,
+  #cardbutton4,
+  #cardbutton5,
+  #cardbutton6 {
+    width: 10rem;
+    height: 10rem;
   }
 }
