@@ -6,9 +6,9 @@ This application will display information and recomendation about any artist, bo
 
 ## User Story
 
-AS A user who is always wanting to try new things
-I WANT a site that recommends things to me and tells me why I will like them
-SO THAT I can make a decision about whether or not to try it
+<p> AS A user who is always wanting to try new things </p>
+<p>I WANT a site that recommends things to me and tells me why I will like them </p>
+<p>SO THAT I can make a decision about whether or not to try it </p>
 
 ## Wireframe or Sketch of the design
 
