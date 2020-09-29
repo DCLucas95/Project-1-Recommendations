@@ -1,6 +1,4 @@
-# Project Title
-
-Best Recommendations
+# Group Project - Best Recommendations
 
 ## Project Description
 
@@ -8,9 +6,9 @@ This application will display information and recomendation about any artist, bo
 
 ## User Story
 
-AS A user who is always wanting to try new things
-I WANT a site that recommends things to me and tells me why I will like them
-SO THAT I can make a decision about whether or not to try it
+<p> AS A user who is always wanting to try new things </p>
+<p>I WANT a site that recommends things to me and tells me why I will like them </p>
+<p>SO THAT I can make a decision about whether or not to try it </p>
 
 ## Wireframe or Sketch of the design
 
@@ -18,7 +16,7 @@ SO THAT I can make a decision about whether or not to try it
 
 #### Final Interface
 
-​![screenshot1](https://github.com/DCLucas95/Project-1-Recommendations/blob/master/Assets/pic01.PNG)
+![image](https://user-images.githubusercontent.com/69066157/94549951-53d8d000-0296-11eb-8baf-4bed2f58fb0a.png)
 
 ## APIs to be used
 
@@ -33,15 +31,10 @@ Jquery for easy to code javascript
 Open weather API for search results
 
 ## Rough breakdown of tasks -
+Felipe - Javascript and AJAX
+Elahe - Javascript and AJAX
+David - HTML, CSS and some Javascript
 
-Create project check list
-Choosing sources for calling info
-Choosing title for our app
-Making a plan for the rough look of the APP
-Building the HTML & CSS
-Bulding the API key
-Working on functionality
-Making sure the app works
 
 ### Link to the Website
 

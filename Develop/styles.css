@@ -116,7 +116,14 @@ a.btn {
   margin-right: 5px;
 }
 
-@media only screen and (max-width: 768px) {
+
+
+  
+.error{
+  outline: 1px solid red;
+}   
+
+@media only screen and (max-width: 600px) {
   #cardbutton1,
   #cardbutton2,
   #cardbutton3,
@@ -127,3 +134,4 @@ a.btn {
     height: 10rem;
   }
 }
+
