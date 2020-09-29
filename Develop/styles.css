@@ -39,6 +39,9 @@
   padding: 30px 40px;
   display: inline-block;
   text-align: center;
+  width: 18rem;
+  height: 18rem;
+  overflow: hidden;
 }
 
 h1 {
@@ -78,7 +81,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  max-width: 400px
+  max-width: 400px;
 }
 
 .card {
@@ -104,4 +107,11 @@ a.btn {
 
 .btn {
   margin-right: 5px;
+}
+@media screen and (max-width: 768px) {
+  .card {
+    width: 8rem;
+    height: 8rem;
+    font-size: 10px;
+  }
 }
