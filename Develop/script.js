@@ -6,12 +6,19 @@ $(document).ready(function () {
   $("#searchB").on("click", function (event) {
     event.preventDefault();
     var userOption = $("#UserSearch").val();
+
+    // the validation on the search button when the text input is empty
+    if(userOption == null || userOption == ''){
+          $("#bestmatches").html("Please type in the box");
+          return;
+    };
     tasteDiveAPI(userOption);
   });
   //call wiki api upon clicking on the suggestion card
   $("button.card").on("click", function (event) {
     event.preventDefault();
     emptyWikitext();
+    debugger;
     var recommenText = $(this).attr("data-id");
     var getIdNumber = $(this).attr("id").slice(-1);
     if (getIdNumber == 1) {
@@ -43,6 +50,7 @@ $(document).ready(function () {
     $.getJSON(divQueryURL).then(function (response) {
       //API tasteDive
       youtArray = [];
+
       for (var i = 0; i < response.Similar.Results.length; i++) {
         //looping at the recommendations and add on the cards
         var typeID = "#Sug" + i;
@@ -111,5 +119,14 @@ function clearLocalStorage() {
 
 //Function to show a modal acknowleding feedback on the contact page
 function showModal() {
-  $("#confirm-modal").modal();
+  
+  $('#confirm-modal').modal();
 }
+
+$('#theForm input[type="text"]').blur(function(){
+  if(!$(this).val()){
+      $(this).addClass("error");
+  } else{
+      $(this).removeClass("error");
+  }
+});
