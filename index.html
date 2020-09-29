@@ -4,11 +4,16 @@
 <head>
   <title>Best Recommendations | Home</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="./Assets/favicon_1.ico" type="image/x-icon">
+  <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
   <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="./Develop/styles.css">
 </head>
 
@@ -20,6 +25,7 @@
       <a class="nav-link" href="./About.html">About</a>
       <a class="nav-link" href="./Team.html">Team</a>
       <a class="nav-link" href="./contact.html">Contact</a>
+      
     </div>
     <div class="topnav-centered">
       <a class="navbar-brand">Best Recommendations</a>
@@ -56,60 +62,60 @@
     <!--Display Tastedive reccomendations-->
     <h2 class="display-4" id="bestmatches"></h2>
     <hr>
-    <div class="row">
+    <div class="row" id="recom">
       <div class="col-sm-2">
-        <button type="button" class="card 1" id="cardbutton1" style="width: 18rem; height: 18rem;">
+        <button type="button" class="card 1" id="cardbutton1">
           <div class="card-body">
-            <h5 id="Sug1">Suggestion 1</h5>
+            <h5 id="Sug1"></h5>
             <!-- <p id="image"><img id="Suggestion2" src="" alt="Suggestion2"></p> -->
             <h3 class="suggcard 1" id="Suggestion1"></h3>
           </div>
         </button>
       </div>
 
-      <div class=" col-sm-2">
-        <button type="button" class="card 2" id="cardbutton2" style="width: 18rem; height: 18rem;">
+      <div class="col-sm-2">
+        <button type="button" class="card 2" id="cardbutton2">
           <div class="card-body">
-            <h5 id="Sug2">Suggestion 2</h5>
+            <h5 id="Sug2"></h5>
             <!-- <p id="image"><img id="Suggestion2" src="" alt="Suggestion2"></p> -->
             <h3 class="suggcard 2" id="Suggestion2"></h3>
           </div>
         </button>
       </div>
 
-      <div class=" col-sm-2">
-        <button type="button" class="card 3" id="cardbutton3" style="width: 18rem; height: 18rem;">
+      <div class="col-sm-2">
+        <button type="button" class="card 3" id="cardbutton3">
           <div class="card-body">
-            <h5 id="Sug3">Suggestion 3</h5>
+            <h5 id="Sug3"></h5>
             <!-- <p id="image"><img id="Suggestion3" src="" alt="Suggestion3"></p> -->
             <h3 class="suggcard 3" id="Suggestion3"></h3>
           </div>
         </button>
       </div>
 
-      <div class=" col-sm-2">
-        <button type="button" class="card 4" id="cardbutton4" style="width: 18rem; height: 18rem;">
+      <div class="col-sm-2">
+        <button type="button" class="card 4" id="cardbutton4">
           <div class="card-body">
-            <h5 id="Sug4">Suggestion 4</h5>
+            <h5 id="Sug4"></h5>
             <!-- <p id="image"><img id="Suggestion4" src="" alt="Suggestion4"></p> -->
             <h3 class="suggcard 4" id="Suggestion4"></h3>
           </div>
         </button>
       </div>
 
-      <div class=" col-sm-2">
-        <button type="button" class="card 5" id="cardbutton5" style="width: 18rem; height: 18rem;">
+      <div class="col-sm-2">
+        <button type="button" class="card 5" id="cardbutton5">
           <div class="card-body">
-            <h5 id="Sug5">Suggestion 5</h5>
+            <h5 id="Sug5"></h5>
             <!-- <p id="image"><img id="Suggestion5" src="" alt="Suggestion5"></p> -->
             <h3 class="suggcard 5" id="Suggestion5"></h3>
           </div>
         </button>
       </div>
-      <div class=" col-sm-2">
-        <button type="button" class="card 6" id="cardbutton6" style="width: 18rem; height: 18rem;">
+      <div class="col-sm-2">
+        <button type="button" class="card 6" id="cardbutton6">
           <div class="card-body">
-            <h5 id="Sug6">Suggestion 6</h5>
+            <h5 id="Sug6"></h5>
             <!-- <p id="image"><img id="Suggestion5" src="" alt="Suggestion6"></p> -->
             <h3 class="suggcard 6" id="Suggestion6"></h3>
           </div>
@@ -150,7 +156,7 @@
       </footer>
 
       <script src="https://code.jquery.com/jquery.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="./Develop/script.js"></script>
 </body>
 

@@ -41,6 +41,16 @@
   text-align: center;
 }
 
+#cardbutton1,
+#cardbutton2,
+#cardbutton3,
+#cardbutton4,
+#cardbutton5,
+#cardbutton6 {
+  width: 18rem;
+  height: 18rem;
+}
+
 h1 {
   font-weight: bolder;
   text-align: center;
@@ -78,7 +88,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  max-width: 400px
+  max-width: 400px;
 }
 
 .card {
@@ -104,4 +114,16 @@ a.btn {
 
 .btn {
   margin-right: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  #cardbutton1,
+  #cardbutton2,
+  #cardbutton3,
+  #cardbutton4,
+  #cardbutton5,
+  #cardbutton6 {
+    width: 10rem;
+    height: 10rem;
+  }
 }
