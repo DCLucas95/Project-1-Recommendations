@@ -31,9 +31,9 @@ Jquery for easy to code javascript
 Open weather API for search results
 
 ## Rough breakdown of tasks -
-Felipe - Javascript and AJAX
-Elahe - Javascript and AJAX
-David - HTML, CSS and some Javascript
+<p>Felipe - Javascript and AJAX </p>
+<p>Elahe - Javascript and AJAX </p>
+<p>David - HTML, CSS and some Javascript </p>
 
 
 ### Link to the Website
