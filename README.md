@@ -20,8 +20,8 @@ This application will display information and recomendation about any artist, bo
 
 ## APIs to be used
 
-Tastedive - Recommendation API
-MediaWiki - Wikipedia API
+<li>Tastedive - Recommendation API</li>
+<li>MediaWiki - Wikipedia API</li>
 
 ## Tools Used
 Github for commitments and website hosting
