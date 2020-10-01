@@ -1,6 +1,10 @@
 #search {
   text-align: center;
 }
+#searchB,
+#clearB {
+  margin-top: 5px;
+}
 #UserSearch {
   width: 800px;
 }
@@ -116,12 +120,9 @@ a.btn {
   margin-right: 5px;
 }
 
-
-
-  
-.error{
+.error {
   outline: 1px solid red;
-}   
+}
 
 @media only screen and (max-width: 600px) {
   #cardbutton1,
@@ -134,4 +135,3 @@ a.btn {
     height: 10rem;
   }
 }
-
