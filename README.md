@@ -23,14 +23,14 @@ This application will display information and recomendation about any artist, bo
 Tastedive - Recommendation API
 MediaWiki - Wikipedia API
 
-##Tools Used
+## Tools Used
 Github for commitments and website hosting
 VS Studio for creating the javascript
 Bootstrap for the layout and styling
 Jquery for easy to code javascript
 Open weather API for search results
 
-## Rough breakdown of tasks -
+## Rough breakdown of tasks
 <p>Felipe - Javascript and AJAX </p>
 <p>Elahe - Javascript and AJAX </p>
 <p>David - HTML, CSS and some Javascript </p>
